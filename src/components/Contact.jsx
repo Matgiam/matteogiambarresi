@@ -6,19 +6,19 @@ function Contact() {
 	const form = useRef();
 
 	const sendEmail = (e) => {
-		e.preventDefault(); // prevent page reload
+		e.preventDefault(); 
 
 		emailjs
 			.sendForm(
-				"service_j3sbexk", // your service ID
-				"template_9t82q8s", // your template ID
+				"service_j3sbexk", 
+				"template_9t82q8s", 
 				form.current,
-				"qFOlVk_wG5pnyDf0m" // your public key
+				"qFOlVk_wG5pnyDf0m" 
 			)
 			.then(
 				() => {
 					alert("Email sent successfully!");
-					form.current.reset(); // clear form after success
+					form.current.reset(); 
 				},
 				(error) => {
 					alert("Failed to send email: " + error.text);
@@ -34,7 +34,7 @@ function Contact() {
 						initial={{ opacity: 0, y: 50 }}
 						whileInView={{ opacity: 1, y: 0 }}
 						transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-						viewport={{ once: false, amount: 0.2 }}
+						viewport={{ once: true, amount: 0.2 }}
 					>
 						Contact
 					</motion.h1>

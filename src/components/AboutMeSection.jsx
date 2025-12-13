@@ -31,7 +31,7 @@ function AboutMeSection() {
 	const p5 = createParagraphAnimation(0.8, 0.95);
 
 	return (
-		<header ref={ref} className="relative">
+		<header ref={ref} className="header2">
 			<div className="about-container">
 				<motion.div style={{ scale: scaleProgress, opacity: opacityProgress }} className="about-content">
 					<h1 id="about">My story</h1>
@@ -58,10 +58,7 @@ function AboutMeSection() {
 						<br /> <br />
 					</motion.p>
 
-					<motion.p style={p5}>
-						I am also passionate about music, I can play multiple instruments such as piano, guitar and drums. I am also in a groupe called Foolish
-						Minds where I compose music <br /> <br />
-					</motion.p>
+				
 				</motion.div>
 				<CardStack />
 			</div>

@@ -8,7 +8,7 @@ export default function Projects() {
 					initial={{ opacity: 0, y: 50 }}
 					whileInView={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-					viewport={{ once: false, amount: 0.2 }}
+					viewport={{ once: true, amount: 0.2 }}
 				>
 					Projects
 				</motion.h1>
@@ -16,7 +16,7 @@ export default function Projects() {
 					initial={{ opacity: 0, y: 50 }}
 					whileInView={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-					viewport={{ once: false, amount: 0.6 }}
+					viewport={{ once: true, amount: 0.2 }}
 				>
 					Take a look at all the projects I have <br /> made during the past two years <br /> during my education
 				</motion.p>

@@ -10,9 +10,9 @@ import MobileMenu from "../components/Menu.jsx";
 import { Link, Route, Routes, BrowserRouter } from "react-router";
 function App() {
 	return (
-		<BrowserRouter>
+		<BrowserRouter basename="/matteogiambarresi">
 			<Routes>
-				<Route path="/" element={<Home/>} />
+				<Route path="/" element={<Home />} />
 			</Routes>
 		</BrowserRouter>
 	);

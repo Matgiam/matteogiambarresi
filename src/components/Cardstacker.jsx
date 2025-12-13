@@ -4,16 +4,16 @@ import move from "lodash-move";
 
 
 const CARD_IMAGES = [
-  "./src/assets/matteo_4.jpeg",
-  "./src/assets/matteo_1.jpg",
-  "./src/assets/matteo_2.png",
-  "./src/assets/matteo_3.jpeg",
-  "./src/assets/matteo_5.jpeg",
+  "https://res.cloudinary.com/dtpbxvstn/image/upload/v1757963336/matteo_4_jsshqi.jpg",
+  "https://res.cloudinary.com/dtpbxvstn/image/upload/v1757963336/matteo_3_mpgfwj.jpg",
+  "https://res.cloudinary.com/dtpbxvstn/image/upload/v1757963340/matteo_2_scpcur.png",
+  "https://res.cloudinary.com/dtpbxvstn/image/upload/v1757963335/matteo_5_yua60g.jpg",
+  "https://res.cloudinary.com/dtpbxvstn/image/upload/v1757963335/matteo_1_clkdng.jpg",
 ];
 
 const CARD_OFFSET = 10;
 const SCALE_FACTOR = 0.06;
-const ROTATION_FACTOR = 5;
+const ROTATION_FACTOR = 3;
 
 const CardStack = () => {
   const [cards, setCards] = useState(CARD_IMAGES);

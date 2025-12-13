@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 import MobileMenu from "./Menu";
 function LandingScreen() {
 	return (
-		<div className="wrapper">
+	<div className="wrapper" style={{ position: "relative" }}>
 			<header>
 				<MobileMenu></MobileMenu>
 				<div className="name">
@@ -62,10 +62,10 @@ function LandingScreen() {
 						animate={{ y: 0, opacity: 1 }}
 						transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.4 }}
 					>
-						Passionate about Front-end <br /> developping, 3D and music.
+						Passionate about front-end <br /> developing, 3D and music.
 					</motion.h2>
 					<div className="landing_image">
-						<img src="./src/assets/matteo.png" alt="Matteo Giambarresi" />
+						<img src="https://res.cloudinary.com/dtpbxvstn/image/upload/v1757963335/Matteo_o3pyvu.png" alt="Matteo Giambarresi" />
 					</div>
 					<nav>
 						<ul>

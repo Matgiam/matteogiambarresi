@@ -10,7 +10,8 @@ import AboutMeSection2 from "../components/AboutMeSection2";
 import FoolishMindsText from "../components/FoolishMinds";
 import FoolishMindsFoto from "../components/FoolishMindsFoto";
 import Contact from "../components/Contact";
-import ArrowUp from "../components/arrowUp";
+import ArrowUp from "../components/ArrowUp";
+import Footer from "../components/Footer";
 function Home() {
 	return (
 		<div>
@@ -20,7 +21,7 @@ function Home() {
 			<Projects />
 			<ScrollingText
 				direction="left"
-				content=" React React React React React React React React React React React React React React React React React React"
+				content="Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects Projects "
 			/>
 			{/* <ProjectCard />
 			<ScrollingText
@@ -33,6 +34,7 @@ function Home() {
 			<FoolishMindsFoto />
 			<FoolishMindsText />
 			<Contact />
+			<Footer />
 		</div>
 	);
 }

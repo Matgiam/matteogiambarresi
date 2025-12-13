@@ -1,7 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "motion/react";
+
 function ProjectCard(props) {
 	const [isOpen, setIsOpen] = useState(false);
+	useEffect(() => {
+		if (isOpen) {
+			document.body.style.overflow = "hidden";
+		} else {
+			document.body.style.overflow = "auto";
+		}
+	}, [isOpen]);
 
 	return (
 		<header className="rectangle">
@@ -20,13 +28,9 @@ function ProjectCard(props) {
 				</div>
 			</motion.div>
 
-			{/* Modal */}
 			{isOpen && (
 				<div className="modal" onClick={() => setIsOpen(false)}>
-					<div
-						className="modal-content"
-						onClick={(e) => e.stopPropagation()} // prevent closing when clicking inside
-					>
+					<div className="modal-content" onClick={(e) => e.stopPropagation()}>
 						<motion.svg
 							whileHover={{ scale: 1.2 }}
 							whileTap={{ scale: 1.0 }}
